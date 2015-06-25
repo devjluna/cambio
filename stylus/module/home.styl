@@ -1,0 +1,402 @@
+.social
+	overflow hidden
+	position fixed
+	top 50%
+	right 0
+	z-index 1000
+	&__btn
+		width 70px
+		height 60px
+		display block
+		background-color red_light
+		text-align center
+		margin-bottom 6px
+		&--facebook
+			background-color #405a9d
+		&--twitter
+			background-color #4ab7d9
+		&--gplus
+			background-color #d44132
+		.fa
+			line-height @height
+			color white
+			font-size 38px
+.topbar
+	padding 18px 30px 45px 30px
+	background-color purple_regular
+	&__authen
+		overflow hidden
+		&__btn
+			font-family bree_rgregular
+			font-size 14.95px
+			margin-right 8px
+			text-transform uppercase
+			&:last-child
+				margin-right 0
+	&__logged
+		position relative
+		margin-top 2px
+		&.open
+			.topbar__logged__options
+				display block !important
+			.topbar__logged__dropdown
+				color yellow_regular !important
+		&__dropdown
+			position relative
+			display block
+			&:hover
+				color yellow_regular !important
+		&__avatar
+			width 32px
+			height 32px
+			border 0
+			border-radius(50%)
+		&__name
+			margin-left 5px
+			vertical-align middle
+			.fa
+				margin-left 4px
+		&__options
+			display none
+			border-radius(4px)
+			margin 0
+			padding 0
+			position absolute
+			top 100%
+			right -15px
+			list-style-type none
+			all-gradient(lighten(red_light, 10%), #ee5e59)
+			width 170px
+			margin-top 8px
+			opacity 0.95
+			z-index 11
+			&::before
+				content ''
+				display block
+				position absolute
+				bottom 100%
+				right 20px
+				border 6px solid transparent
+				border-bottom-color lighten(red_light, 10%)
+				border-right-color lighten(red_light, 10%)
+			li:not(:last-child) a::after
+				content ''
+				width 125px
+				height 1px
+				text-align center
+				left 0
+				right 0
+				background-color lighten(red_regular, 15%)
+				position absolute
+				display block
+				margin-left auto
+				margin-right auto
+		&__option
+			padding 0 15px
+			height 38px
+			line-height 38px
+			display block
+			text-align left
+			position relative
+			font-size 16px
+			&:hover
+				color yellow_regular !important
+			.fa
+				color yellow_regular
+				width 20px
+				text-align center
+				font-size 16px
+				margin-right 5px
+
+	&__options
+		margin 2px 34px 0 0
+	&__option
+		display inline-block
+		float left
+		margin-right 12px
+		&__btn
+			border-radius(50%)
+			display block
+			height 32px
+			width 32px
+			line-height 32px
+			text-shadow(1px 2px 1px rgba(0,0,0,0.2))
+			box-shadow(1px 2px 2px purple_dark)
+	&__search
+		position relative
+		width 200px
+		padding 2px 17px 0 0
+		&__text
+			background-color purple_dark
+			border 1px solid #d42a7a
+			height 28px
+			padding-right 20px
+			color white !important
+			&:focus
+				border-color #dd5494
+		&__btn
+			border-radius(50%)
+			display block
+			height 32px
+			width 32px
+			line-height 32px
+			text-shadow(1px 2px 1px rgba(0,0,0,0.2))
+			box-shadow(1px 2px 2px purple_dark)
+			position absolute
+			top 0
+			right 0
+
+.fixed
+	position fixed
+	top 0
+	left 0
+	width 100%
+	height 70px
+	padding-top 10px
+	background-color red_regular
+	box-shadow(0 2px 10px rgba(0,0,0,.5))
+	transitions(.1s all ease-in)
+	.logo
+		background-size 50% auto
+		margin-top -10px
+		margin-left 70px
+		transitions(.1s all ease-in)
+
+.header
+	z-index 10
+	all-gradient(red_regular, #c9060a)
+	position relative
+	box-shadow(0 30px 160px 10px rgba(0,0,0,0.6))
+	&::before
+		content ''
+		background url(Images/menu-cut.png) center center
+		background-position-y 0px
+		border-bottom 1px red_regular solid
+		width 100%
+		height 29px
+		position absolute
+		bottom 100%
+		z-index -1
+.logo
+	background-image url(Images/logo.png)
+	background-repeat no-repeat
+	float left
+	height 136px
+	margin 0
+	width 202px
+	margin-top -88px
+	transitions(.1s all ease-in)
+	&__link
+		display inline-block
+		height 100%
+		text-indent -9999px
+		width 100%
+.menu
+	margin-bottom 0
+	border none !important
+	min-height 0 !important	
+.menu__list
+		float right
+		padding-top 11px
+		.menu__item
+			margin-left 4px
+			&--active > a
+			&:hover > a
+			&.open > a
+			&.open > a:focus
+				background-color purple_regular
+				color yellow_light !important
+				box-shadow(inset 1px 2px 2px rgba(255,255,255,0.2))
+			.caret
+				margin-top -7px !important
+			.menu__link
+				text-transform uppercase
+				font-size 16px
+				border-top-left-radius 5px
+				border-top-right-radius 5px
+				padding 16px 16px !important
+				line-height 17px
+				&:hover .dropdown-menu
+					background-color red_regular
+			.dropdown-menu
+				background-color red_light
+				padding 0
+				border none
+.navbar-nav>li>a
+.navbar-nav>li>a:focus
+.navbar-nav>li>a:active
+	background-color transparent
+			
+.dropdown-menu>li>a
+	padding 12px 15px
+	width 200px
+	display block	
+	font-size 18px
+	line-height 18px
+	&:hover
+		background-color yellow_regular
+		color red_regular !important
+
+.banner
+	background-color #000
+	position relative
+	z-index 2
+	&__options
+		position absolute
+		top 50%
+		z-index 10
+		left 0
+		right 0
+		text-align center
+		margin-top -150px
+		h2
+		h6
+			margin 0
+			text-shadow(2px 2px 6px darken(gray_regular, 40%))
+		h2
+			font-size 48px
+			text-transform uppercase
+		h6
+			font-size 40px
+		&__btn
+			margin-top 40px
+			.btn
+				all-gradient(yellow_light, yellow_dark) !important
+				line-height 36px
+				color red_light !important
+				font-family bree_rgbold
+				font-size 20px
+				border none
+				margin 0 10px
+				box-shadow(0 5px 0 0 darken(yellow_dark, 25%))
+	&__cut
+		background url(Images/banner-cut.png) repeat-x center bottom
+		width 100%
+		height 71px
+		position absolute
+		bottom 0
+		z-index 2
+
+.summary
+	position relative
+	z-index 3
+	padding 20px 0
+	text-align center
+	&__text
+		padding 0 0 0 15px
+		line-height 20px
+	&::after
+		content ''
+		background url(Images/summary-cut.png) no-repeat center
+		width 100%
+		height 714px
+		position absolute
+		top -70px
+		left 0
+		right 0
+
+.steps
+	margin 135px 0 140px
+	text-align center
+	z-index 3
+	position relative
+	&__question
+		font-size 32px
+		line-height 54px
+		margin 0
+	&__response
+		background-image url(Images/steps.png)
+		width 202px
+		height 76px
+		text-indent -9999px
+		display inline-block
+		margin 0
+	&__item
+		text-align center
+		&__img
+			margin 0 auto
+		&__title
+			font-size 21px
+			text-transform uppercase
+			margin 0 0 20px
+		p
+			padding 0 92px
+			
+.partners
+	background-color red_dark
+	position relative
+	padding 8px 0 12px
+	&::before
+		content ''
+		background url(Images/partners-cut.png) center center
+		width 100%
+		height 56px
+		position absolute
+		bottom 100%
+		z-index -1
+	&__list
+		padding 0 250px
+		margin 0
+	&__item
+		display inline-block
+		width 32.4%
+		text-align center
+		img
+			max-width 100%
+			height auto
+			display block
+			margin 0 auto
+// Footer styles
+.footer
+	background-color red_light
+	text-align center
+	p
+		padding 14px 0 10px
+		font-family bree_ltlight
+		line-height 16px
+		margin 0
+			
+.page
+	overflow hidden
+	padding 50px 0 150px
+.error-backend
+	position relative
+	padding 0 0 20px 25px
+	color red_dark
+	font-family bree_rgregular
+	font-size 16px
+	&::before
+		content '\f05c'
+		font-family 'FontAwesome'
+		position absolute
+		left 0
+		font-size 24px
+		color red_dark
+
+.show-more
+	margin 20px auto 20px
+	display table
+	&__link
+		display table-cell
+		text-align center
+		font-size 40px
+		color #e87a3f !important
+		.fa
+			text-shadow(2px 2px 5px darken(#e87a3f, 40%))
+		
+.pagination>li>a
+.pagination>li>span
+	color #8e8e8e !important
+	
+.pagination>.purple>a
+.pagination>.purple>span
+.pagination>.purple>a:hover
+.pagination>.purple>span:hover
+.pagination>.purple>a:focus
+.pagination>.purple>span:focus
+	z-index 2
+	color white !important
+	background purple_dark
+	border-color purple_dark
+	cursor default
+	

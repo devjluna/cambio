@@ -1,0 +1,183 @@
+#zoomMin.vertical,
+#zoomMax.vertical
+  color #000
+  font 700 14px Arial
+  margin auto
+  width 100%
+  text-align center
+
+#zoomSlider
+  &.vertical
+    margin 7px auto
+    height 150px
+    width 6px
+    position relative
+  &.horizontal
+    margin 7px auto
+    height 6px
+    width 300px
+    float left
+    position relative
+
+#zoomContainer
+  &.vertical
+    background-color #FFF
+    z-index 3
+    width 31px
+    height 200px
+  &.horizontal
+    background-color #FFF
+    z-index 3
+    width auto
+
+#rotationMin.vertical,#rotationMax.vertical
+  color #000
+  font 700 14px Arial
+  margin auto
+  width 100%
+  text-align center
+
+#rotationSlider
+  &.vertical
+    margin 7px auto
+    height 150px
+    width 6px
+    position relative
+  &.horizontal
+    margin 7px 5px
+    height 6px
+    width 300px
+    float left
+    position relative
+
+#rotationContainer
+  &.vertical
+    background-color #FFF
+    z-index 3
+    width 31px
+    height 200px
+  &.horizontal
+    background-color #FFF
+    z-index 3
+    width auto
+
+#zoomMin.horizontal,#zoomMax.horizontal
+  color #000
+  font 300 12px Arial
+  margin 2px 3px
+  padding 0 5px
+  float left
+  text-align center
+
+#rotationMin.horizontal,#rotationMax.horizontal
+  color #000
+  font 300 12px Arial
+  margin 2px 4px
+  float left
+  text-align center
+
+.mvn
+  background url(Images/movement.png) no-repeat
+  width 21px
+  height 21px
+  &:hover
+    cursor pointer
+
+.mvn_no
+  background-position 0px 0px
+  &:hover
+    background-position 100% 0px
+
+.mvn_n
+  background-position 0px -21px
+  &:hover
+    background-position 100% -21px
+
+.mvn_ne
+  background-position 0px -42px
+  &:hover
+    background-position 100% -42px
+
+.mvn_o
+  background-position 0px -63px
+  &:hover
+    background-position 100% -63px
+
+// .mvn_c
+//   &:hover
+
+.mvn_e
+  background-position 0px -84px
+  &:hover
+    background-position 100% -84px
+
+.mvn_so
+  background-position 0px -105px
+  &:hover
+    background-position 100% -105px
+
+.mvn_s
+  background-position 0px -126px
+  &:hover
+    background-position 100% -126px
+
+.mvn_se
+  background-position 0px -147px
+  &:hover
+    background-position 100% -147px
+
+.cropzoom-container,.cropzoom-container div
+  box-sizing content-box
+  
+.cropzoom__footer
+  text-align center
+  padding-top 30px
+  margin-left -22px
+  margin-right -22px
+  
+// #zoomContainer.vertical
+//   height 25px !important
+//   width 250px !important
+//   bottom 10px !important
+//   top auto !important
+//   left 50% !important
+//   margin-left -125px
+//   border-radius(5px)
+//   background-color #000
+//   opacity .3
+#crop_container
+  border 0 !important
+#zoomMin.horizontal
+#zoomMax.horizontal
+  font-size 18px
+  margin 4px 3px
+  padding 0 6px !important
+  color white
+#zoomMin.horizontal
+  margin-right 6px !important
+#zoomMax.horizontal
+  margin-left 6px !important
+#zoomContainer.horizontal
+  position absolute
+  opacity 1 !important
+  margin-top -10px
+  border-radius(4px)
+  background-color transparent !important
+  .ui-state-default
+    top -9px !important
+#zoomSlider.horizontal
+  width 250px !important
+  margin 10px auto !important
+  height 7px
+.ui-slider .ui-slider-handle
+  border-radius(50%)
+  width 1.5em
+  height 1.5em
+  background-color yellow_regular !important
+  border 0 !important
+  outline 0
+  cursor pointer
+a.ui-slider-handle.ui-state-default.ui-corner-all
+  background none
+#searchImage
+  display none

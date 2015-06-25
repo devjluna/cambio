@@ -1,0 +1,38 @@
+.arrow-text
+	position absolute
+	left -20px
+	top 24px
+	background-color white
+	color red_light
+	padding 8px 22px
+	&::before
+		content ''
+		top 100%
+		border 11px solid transparent
+		position absolute
+		border-top-color #939393
+		border-right-color #939393
+		left 0
+		z-index -1
+		
+.post
+	overflow hidden
+	&__subcategory
+		font-family bree_rgbold
+		color yellow_regular
+		font-size 40px
+		text-shadow(2px 1px 5px red_dark)
+		margin 60px 0 45px
+		.light
+			font-family bree_ltlight
+			color white
+	&__title
+		font-size 37px
+		line-height @font-size
+		color white
+			
+	&__content
+		position relative
+		background-color #f7423f
+		border-radius(5px)
+		padding 40px

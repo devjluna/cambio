@@ -1,0 +1,343 @@
+<!doctype html>
+<html class="no-js" lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        
+        <!-- Resources -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/vendor/jasny-bootstrap.min.css">
+        <link rel="stylesheet" href="css/vendor/formValidation.min.css">
+        <link rel="stylesheet" href="css/vendor/fuelux.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!-- HEADER TOP -->
+        <div class="topbar">
+            <div class="container">
+                <!-- Logged -->
+                <div class="topbar__logged pull-right">
+                    <a href="" class="topbar__logged__dropdown">
+                        <img src="Images/default/avatar-default.jpg" alt="" class="topbar__logged__avatar">
+                        <span class="topbar__logged__name">Gianmarco <i class="fa fa-caret-down"></i></span>
+                    </a>
+                    <ul class="topbar__logged__options">
+                        <li>
+                            <a href="profile_artist_edit.html" class="topbar__logged__option"><i class="fa fa-eye"></i>Ver perfil</a>
+                        </li>
+                        <li>
+                            <a href="profile_edit_data.html" class="topbar__logged__option"><i class="fa fa-edit"></i>Editar datos</a>
+                        </li>
+                        <li>
+                            <a href="profile_add_profile.html" class="topbar__logged__option"><i class="fa fa-user-plus"></i>Agregar perfil</a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="topbar__logged__option"><i class="fa fa-sign-out"></i>Cerrar sesión</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Authentication -->
+                <!-- <div class="topbar__authen pull-right">
+                    <a href="" class="btn topbar__authen__btn btn--yellow--degraded" data-toggle="modal" data-target="#modalLogin">Ingresar</a>
+                    <a href="register.html" class="btn topbar__authen__btn btn--lilac--degraded">Regístrate</a>
+                </div> -->
+                
+                <!-- Search and options -->
+                <ul class="topbar__options pull-right">
+                    <li class="topbar__option language">
+                        <a href="" class="topbar__option__btn btn--lilac">ES</a>
+                    </li>
+                    <li class="topbar__option">
+                        <a href="" class="topbar__option__btn btn--lilac"><i class="fa fa-sitemap"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div> <!-- /ENDS HEADER TOP-->
+
+        <!-- HEADER -->
+        <header class="header">
+            <nav class="navbar menu" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnav">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <h1 class="logo">
+                            <a href="index.html" class="logo__link">Musica Perú</a>
+                        </h1>
+                    </div>
+                    <div class="collapse navbar-collapse" id="mainnav">
+                        <ul class="nav navbar-nav menu__list">
+                            <li class="menu__item"><a href="" class="menu__link">¿Que es la rnm?</a></li>
+                            <li class="menu__item"><a href="search_artists.html" class="menu__link">Encuentra artístas</a></li>
+                            <li class="menu__item dropdown">
+                                <a href="" class="dropdown-toggle menu__link" data-toggle="dropdown">Oportunidades</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">Becas</a></li>
+                                    <li><a href="">Actividades y eventos</a></li>
+                                    <li><a href="">Fondos</a></li>
+                                    <li><a href="">Concursos y premios</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item dropdown">
+                                <a href="" class="dropdown-toggle menu__link" data-toggle="dropdown">Recursos en línea</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">Marco normativo</a></li>
+                                    <li><a href="">Publicaciones</a></li>
+                                    <li><a href="">Material audiovisual</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item"><a href="" class="menu__link">Contáctanos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header> <!-- /ENDS HEADER -->
+
+        <!-- WRAPPER -->
+        <div class="wrapper">
+            <div class="profile">
+                <div class="profile__cover-photo">
+                    <div class="container edit-container">
+                    <!-- Agregar foto de portada con plugin cropit jquery -->
+                        <div class="edit-btn edit-btn--photo">
+                            <a href="">
+                                <i class="fa fa-camera edit-btn__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile__header">
+                    <div class="container">
+                        <div class="profile__header__box">
+                            <div class="profile__avatar">
+                                <a href="">
+                                    <img src="Images/default/avatar_profile.jpg" alt="" class="profile__avatar__img">
+                                </a>
+
+                                <div class="edit-btn edit-btn--avatar">
+                                    <a href="edit-btn__modal" data-toggle="modal" data-target="#modalEditProfile">
+                                        <i class="fa fa-camera edit-btn__icon"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="profile__views pull-right">
+                                350<br><span>visitas</span>
+                            </div>
+                            <div class="profile__social pull-right">
+                                <ul class="list-inline">
+                                    <li><a href="" class="profile__social__shared gplus"><i class="fa fa-google-plus fa-2x "></i></a></li>
+                                    <li><a href="" class="profile__social__shared fb"><i class="fa fa-facebook fa-2x"></i></a></li>
+                                    <li><a href="" class="profile__social__shared twitter"><i class="fa fa-twitter fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="profile__card">
+                                <h1 class="profile__card__name">Pedro Suarez Vertiz</h1>
+                                <h2 class="profile__card__profile">Autor / Cantautor</h2>
+                                <p>Cantautor Peruano reconocido y Embajador de buena voluntad por UNICEF son algunos de los reconocimientos obtenidos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="profile__body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <!-- Profile data -->
+                                <div class="categories">
+                                    <h2 class="categories__title">Datos de perfil</h2>
+                                    <ul class="categories__list">
+                                        <li class="no-border">
+                                            <span class="categories__data"><i class="fa fa-user"></i>Autor / Compositor</span>
+                                        </li>
+                                        <li class="no-border">
+                                            <span class="categories__data"><i class="fa fa-microphone"></i>Solista</li></span>
+                                        <li class="no-border">
+                                            <span class="categories__data"><i class="fa fa-music"></i>Baladas, Salsa</span>
+                                        </li>
+                                        <li class="no-border">
+                                            <span class="categories__data"><i class="fa fa-star"></i>Gold Star Music</span>
+                                        </li>
+                                        <li class="no-border">
+                                            <span class="categories__data"><i class="fa fa-users"></i>Emilio Estefan</span>
+                                        </li>
+                                        <li class="no-border">
+                                            <span class="categories__data"><i class="fa fa-book"></i>Si tiene</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Personal information -->
+                                <div class="categories">
+                                    <h2 class="categories__title">Información personal</h2>
+                                    <ul class="categories__list">
+                                        <li class="no-border">
+                                            <span class="categories__data"><i class="fa fa-user"></i>Español / Inglés</span>
+                                        </li>
+                                        <li class="no-border">
+                                            <span class="categories__data"><i class="fa fa-microphone"></i>Lima, Perú</li></span>
+                                        <li class="no-border">
+                                            <span class="categories__data"><i class="fa fa-music"></i>16 de marzo, 2014</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Other profiles -->
+                                <div class="categories">
+                                    <h2 class="categories__title">Otros perfiles</h2>
+                                    <ul class="categories__list">
+                                        <li class="no-border">
+                                            <span class="categories__data"><i class="fa fa-user"></i>Músico</span>
+                                        </li>
+                                        <li class="no-border">
+                                            <span class="categories__data"><i class="fa fa-microphone"></i>Solista</li></span>
+                                    </ul>
+                                </div>
+                                <div class="row profile__actions">
+                                    <div class="col-sm-9">
+                                        <button class="btn btn-block btn-lg btn--lilac2"><i class="fa fa-user fa-lg">&nbsp;&nbsp;</i>Contactar</button>
+                                        <button class="btn btn-block btn-lg btn--lilac2"><i class="fa fa-ban fa-lg">&nbsp;&nbsp;</i>Reportar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-offset-1 col-sm-8 pl-0">
+                                <!-- Configuración de datos personales -->
+                                <div class="categories categories--no-gradient clearfix">
+                                    <h2 class="categories__title"><i class="fa fa-newspaper-o">&nbsp;&nbsp;</i>Agregar albúm</h2>
+                                    <form method="POST" action="" id="uploadForm" class="form">
+                                        <div class="row">
+                                            <div class="col-sm-12 help_mB10">
+                                                <p>Sube tus fotos. Las imágenes que subas no deben pesar más de 1M y deben de ser de las siguientes extensiones (.jpg , .png , .jpeg).</p>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <input type="text" id="namealbum" name="namealbum" class="form-control" placeholder="Nombre de albúm">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Gallery photos -->
+                                        <div class="gallery">
+                                            <div class="upload">
+                                                <div class="fileinput fileinput-new upload__thumbnails" data-provides="fileinput">
+                                                    <a href="" class="upload__close">&times;</a>
+                                                    <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+                                                        <span class="btn-file upload__btn">
+                                                            <span class="fileinput-new">
+                                                                +<br><span class="upload__text">Buscar foto</span>
+                                                            </span>
+                                                            <input type="file" name="gallery[]" id="preview-img" class="upload__validate gallery_file" accept="image/jpg, image/JPG,image/JPEG, image/jpeg">
+                                                        </span>
+                                                    </div>
+                                                    <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <input type="text" id="" name="nameimg[]" class="form-control upload__name" placeholder="Agregale un nombre">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form__actions form__actions--edit">
+                                            <button type="button" class="btn btn--yellow btn-mlr">Cancelar</button>
+                                            <button type="submit" class="btn btn--yellow btn-mlr" disabled="disabled">Guardar</button>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div> <!-- /ENDS WRAPPER -->
+
+        <!-- PARTNERS -->
+        <section class="partners">
+            <div class="container">
+                <ul class="partners__list">
+                    <li class="partners__item">
+                        <img src="Images/ministerio-cultura.png" alt="Ministerio de Cultura" width="165" height="56">
+                    </li>
+                    <li class="partners__item">
+                        <img src="Images/peru.png" alt="Marca Perú" width="165" height="56">
+                    </li>
+                    <li class="partners__item">
+                        <img src="Images/promperu.png" alt="Promperu" width="165" height="56">
+                    </li>
+                </ul>
+            </div>
+        </section> <!-- /ENDS PARTNERS -->
+            
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <p>Registro Nacional de Música Peruana - PROMPERÚ <br> COPYRIGHT 2015. Todos los derechos reservados.</p>
+            </div>
+        </footer> <!-- /ENDS FOOTER -->
+
+        <!-- MODALS -->
+        <!-- Modal edit Avatar -->
+        <div class="modal fade" id="modalEditProfile" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        
+                        <form method="post" action="">
+                            <div class="image-editor">
+                                <div class="cropit-header">
+                                    <input type="file" class="cropit-image-input">
+                                    <div class="btn btn-xs btn--yellow cropit-image-select">
+                                        <i class="fa fa-upload">&nbsp;&nbsp;</i>Subir imagen
+                                    </div>
+                                </div>
+                                <div class="cropit-image-preview-container">
+                                    <div class="cropit-image-preview"></div>
+                                </div>
+                                <div class="cropit-zoom">
+                                    <span><i class="fa fa-minus fa-lg"></i></span>
+                                    <input type="range" class="cropit-image-zoom-input">
+                                    <span><i class="fa fa-plus fa-lg"></i></span>
+                                </div>
+                                <input type="hidden" name="image-data" class="hidden-image-data" />
+                                <div class="cropit-actions">
+                                    <button type="button" class="btn btn--yellow" data-dismiss="modal" aria-label="Close">Cancelar</button>
+                                    <button type="submit" class="btn btn--yellow">Guardar</button>
+                                </div>
+                            </div>
+                        </form>
+                        
+                        <!-- <div>
+                            <code>$form.serialize() =</code>
+                            <code id="result-data"></code>
+                        </div> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/jasny-bootstrap.min.js"></script>
+        <script src="js/vendor/formvalidation/formValidation.min.js"></script>
+        <script src="js/vendor/formvalidation/framework/bootstrap.min.js"></script>
+        <script src="js/upload-img.js"></script>
+
+        <script src="js/home.js"></script>
+        <script src="js/editProfile.js"></script>
+    </body>
+</html>

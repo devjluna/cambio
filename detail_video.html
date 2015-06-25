@@ -1,0 +1,376 @@
+<!doctype html>
+<html class="no-js" lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        
+        <!-- Resources -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/vendor/formValidation.min.css">
+        <link rel="stylesheet" href="css/vendor/fuelux.css">
+        <link rel="stylesheet" href="css/vendor/mediaelementplayer.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <div class="social">
+            <a href="" target="_blank" class="social__btn social__btn--facebook">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="" target="_blank" class="social__btn social__btn--twitter">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="" target="_blank" class="social__btn social__btn--gplus">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </div>
+        <!-- HEADER TOP -->
+        <div class="topbar">
+            <div class="container">
+                <!-- Authentication -->
+                <div class="topbar__authen pull-right">
+                    <a href="" class="btn topbar__authen__btn btn--yellow--degraded" data-toggle="modal" data-target="#modalLogin">Ingresar</a>
+                    <a href="register.html" class="btn topbar__authen__btn btn--lilac--degraded">Regístrate</a>
+                </div>
+                
+                <!-- Search and options -->
+                <ul class="topbar__options pull-right">
+                    <li class="topbar__option language">
+                        <a href="" class="topbar__option__btn btn--lilac">ES</a>
+                    </li>
+                    <li class="topbar__option">
+                        <a href="" class="topbar__option__btn btn--lilac"><i class="fa fa-sitemap"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div> <!-- /ENDS HEADER TOP-->
+
+                <!-- HEADER -->
+        <header class="header">
+            <nav class="navbar menu" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnav">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <h1 class="logo">
+                            <a href="index.html" class="logo__link">Musica Perú</a>
+                        </h1>
+                    </div>
+                    <div class="collapse navbar-collapse" id="mainnav">
+                        <ul class="nav navbar-nav menu__list">
+                            <li class="menu__item"><a href="" class="menu__link">¿Que es la rnm?</a></li>
+                            <li class="menu__item"><a href="search_artists.html" class="menu__link">Encuentra artístas</a></li>
+                            <li class="menu__item dropdown">
+                                <a href="" class="dropdown-toggle menu__link" data-toggle="dropdown" data-hover="dropdown">Oportunidades <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">Becas</a></li>
+                                    <li><a href="">Actividades y eventos</a></li>
+                                    <li><a href="">Fondos</a></li>
+                                    <li><a href="">Concursos y premios</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item dropdown">
+                                <a href="" class="dropdown-toggle menu__link" data-toggle="dropdown" data-hover="dropdown">Recursos en línea <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">Marco normativo</a></li>
+                                    <li><a href="">Publicaciones</a></li>
+                                    <li><a href="">Material audiovisual</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item"><a href="" class="menu__link">Contáctanos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header> <!-- /ENDS HEADER -->
+
+        <!-- WRAPPER -->
+        <div class="wrapper">
+            <div class="profile">                
+                <div class="profile__cover-photo">
+                    <!-- Agregar foto de portada con plugin cropit jquery -->
+                </div>
+                <div class="profile__header">
+                    <div class="container">
+                        <div class="profile__header__box">
+                            <div class="profile__avatar">
+                                <a href="">
+                                    <img src="Images/default/avatar_profile.jpg" alt="" class="profile__avatar__img">
+                                </a>
+                            </div>
+                            <div class="profile__views pull-right">
+                                350<br><span>visitas</span>
+                            </div>
+                            <div class="profile__social pull-right">
+                                <ul class="list-inline">
+                                    <li><a href="" class="profile__social__shared gplus"><i class="fa fa-google-plus fa-2x "></i></a></li>
+                                    <li><a href="" class="profile__social__shared fb"><i class="fa fa-facebook fa-2x"></i></a></li>
+                                    <li><a href="" class="profile__social__shared twitter"><i class="fa fa-twitter fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="profile__card">
+                                <h1 class="profile__card__name">Pedro Suarez Vertiz</h1>
+                                <h2 class="profile__card__profile">Autor / Cantautor</h2>
+                                <p>Cantautor Peruano reconocido y Embajador de buena voluntad por UNICEF son algunos de los reconocimientos obtenidos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="profile__body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <!-- Profile data -->
+                                <div class="categories">
+                                    <h2 class="categories__title">Datos de perfil</h2>
+                                    <ul class="categories__list">
+                                        <li class="no-border">
+                                            <span class="categories__data"><i class="fa fa-user"></i>Autor / Compositor</span>
+                                        </li>
+                                        <li class="no-border">
+                                            <span class="categories__data"><i class="fa fa-microphone"></i>Solista</li></span>
+                                        <li class="no-border">
+                                            <span class="categories__data"><i class="fa fa-music"></i>Baladas, Salsa</span>
+                                        </li>
+                                        <li class="no-border">
+                                            <span class="categories__data"><i class="fa fa-star"></i>Gold Star Music</span>
+                                        </li>
+                                        <li class="no-border">
+                                            <span class="categories__data"><i class="fa fa-users"></i>Emilio Estefan</span>
+                                        </li>
+                                        <li class="no-border">
+                                            <span class="categories__data"><i class="fa fa-book"></i>Si tiene</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Personal information -->
+                                <div class="categories">
+                                    <h2 class="categories__title">Información personal</h2>
+                                    <ul class="categories__list">
+                                        <li class="no-border">
+                                            <span class="categories__data"><i class="fa fa-user"></i>Español / Inglés</span>
+                                        </li>
+                                        <li class="no-border">
+                                            <span class="categories__data"><i class="fa fa-microphone"></i>Lima, Perú</li></span>
+                                        <li class="no-border">
+                                            <span class="categories__data"><i class="fa fa-music"></i>16 de marzo, 2014</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Other profiles -->
+                                <div class="categories">
+                                    <h2 class="categories__title">Otros perfiles</h2>
+                                    <ul class="categories__list">
+                                        <li class="no-border">
+                                            <span class="categories__data"><i class="fa fa-user"></i>Músico</span>
+                                        </li>
+                                        <li class="no-border">
+                                            <span class="categories__data"><i class="fa fa-microphone"></i>Solista</li></span>
+                                    </ul>
+                                </div>
+                                <div class="row profile__actions">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <button class="btn btn-block btn-lg btn--red-options" data-toggle="modal" data-target="#modalContact">Contactar</button>
+                                        <button class="btn btn-block btn-lg btn--red-options" data-toggle="modal" data-target="#modalReport">Reportar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-offset-1 col-sm-8 pl-0">
+                                <!-- Mis media -->
+                                <div class="categories categories--no-gradient">
+                                    <h2 class="categories__title"><i class="fa fa-camera">&nbsp;&nbsp;</i>Mis videos</h2>
+                                    <div class="categories__album-data">
+                                        <span class="categories__album-data__name">Nombre de video reproduciendo</span>
+                                        <span class="pull-right categories__album-data__date"><i class="fa fa-clock-o">&nbsp;</i>20/02/15 &nbsp;2:00pm</span>
+                                    </div>
+                                    <div class="row media">
+                                        <div class="col-sm-12">
+                                            <div class="media__container">
+                                                <video width="640" height="360" style="width: 100%; height: 100%;" class="media__video" preload="none">
+                                                    <source type="video/youtube" src="https://www.youtube.com/watch?v=4J74TpvO25Q" />
+                                                </video>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <span class="media__album-name">Nombre de album</span>   
+                                            <ul class="media__list scroll">
+                                                <li class="media__item">
+                                                    <a href="" class="media__item__link">
+                                                        <div class="media__item__img">
+                                                            <video width="640" height="360" style="width: 100%; height: 100%;" class="media__item__video" preload="none">
+                                                                <source type="video/youtube" src="https://www.youtube.com/watch?v=V2VToIDHWIw" />
+                                                            </video>
+                                                        </div>
+                                                        <div  class="media__item__data">
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <h4>Parte de este juego</h4>
+                                                                    <span>Fecha de publicación: 20/02/15 &nbsp;02:00pm</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="media__item">
+                                                    <a href="" class="media__item__link">
+                                                        <div class="media__item__img">
+                                                            <video width="640" height="360" style="width: 100%; height: 100%;" class="media__item__video" preload="none">
+                                                                <source type="video/youtube" src="https://www.youtube.com/watch?v=SfWbj8mA-TI" />
+                                                            </video>
+                                                        </div>
+                                                        <div  class="media__item__data">
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <h4>Parte de este juego</h4>
+                                                                    <span>Fecha de publicación: 20/02/15 &nbsp;02:00pm</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div> <!-- /ENDS WRAPPER -->
+
+        <!-- PARTNERS -->
+        <section class="partners">
+            <div class="container">
+                <ul class="partners__list">
+                    <li class="partners__item">
+                        <img src="Images/ministerio-cultura.png" alt="Ministerio de Cultura" width="165" height="56">
+                    </li>
+                    <li class="partners__item">
+                        <img src="Images/peru.png" alt="Marca Perú" width="165" height="56">
+                    </li>
+                    <li class="partners__item">
+                        <img src="Images/promperu.png" alt="Promperu" width="165" height="56">
+                    </li>
+                </ul>
+            </div>
+        </section> <!-- /ENDS PARTNERS -->
+            
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <p>Registro Nacional de Música Peruana - PROMPERÚ <br> COPYRIGHT 2015. Todos los derechos reservados.</p>
+            </div>
+        </footer> <!-- /ENDS FOOTER -->
+
+        <!-- MODALS -->
+        <!-- Modal login -->
+        <div class="modal fade" id="modalLogin" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4>Iniciar Sesión</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" method="" id="loginForm" class="frmlogin">
+                            <!-- <div class="error-backend">Tu correo no existe</div> -->
+                            <div class="form-group">
+                                <input type="text" id="email" name="email" class="form-control" placeholder="Correo electrónico">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="pwd" name="pwd" class="form-control" placeholder="Contraseña">
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" name="remember" id="remember"><label for="remember">Recordar contraseña</label>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn--yellow">Ingresar</button>
+                                <a href="reset_password.html" class="text-link text-link--ml">¿Haz olvidado tu contraseña?</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal report -->
+        <div class="modal fade" id="modalReport" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4>Formulario de reporte</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" method="" id="reportForm" class="">
+                            <h5 class="register__guie--sm">Para reportar cualquier anomalía en este perfil ingresa los siguientes datos.</h5>
+                            <!-- <div class="error-backend"></div> -->
+                            <div class="form-group">
+                                <label for="name">Nombres y apellidos</label>
+                                <input type="text" id="name" name="name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo</label>
+                                <input type="text" id="email" name="email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="livelihood">Sustento</label>
+                                <textarea name="livelihood" id="livelihood" class="form-control" rows="5"></textarea>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-sm btn--yellow" data-dismiss="modal" aria-label="Close">Cancelar</button>
+                                <button type="submit" class="btn btn-sm btn--yellow btn-mlr">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal contact -->
+        <div class="modal fade" id="modalContact" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4>Contacto por mensaje</h4>
+                    </div>
+                    <div class="modal-body text-center">
+                        <h5 class="register__guie--sm">¡Contáctame por correo electrónico!</h5>
+                        <a href="" class="text-link text-link--md">correo@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/bootstrap-hover-dropdown.min.js"></script>
+        <script src="js/vendor/jasny-bootstrap.min.js"></script>
+        <script src="js/vendor/formvalidation/formValidation.min.js"></script>
+        <script src="js/vendor/formvalidation/framework/bootstrap.min.js"></script>
+        <script src="js/vendor/fuelux.min.js"></script>
+        <script src="js/vendor/mediaelement-and-player.min.js"></script>
+        <script src="js/vendor/lightbox-2.6.min.js"></script>
+        <script src="js/vendor/jquery.slimscroll.min.js"></script>
+
+        <script src="js/home.js"></script>
+        <script src="js/media.js"></script>
+    </body>
+</html>

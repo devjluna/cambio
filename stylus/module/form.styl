@@ -1,0 +1,116 @@
+.form
+	&__fieldset
+		border none
+		margin 0
+		padding 0
+		margin-bottom 25px
+		&--shadow
+			padding 10px 0 36px
+			border 0
+			position relative
+			background-color red_light
+			margin-bottom 30px
+			&:first-child
+				margin-top 16px
+			&:last-child
+				margin-bottom 10px
+				&::after
+					content ''
+					box-shadow(none)
+			&::after
+				content ''
+				position absolute
+				z-index -1
+				box-shadow(0 0 50px rgba(0,0,0,.4))
+				bottom 0px
+				width 90%
+				height 50%
+				border-radius(100%)
+				left 5%
+				right 5%
+		&--vertical
+			padding 22px 26px
+			background-color rgba(#ff4c46,0.7)
+			border-radius(6px)
+			margin-bottom 30px !important
+			.form-group
+				padding-left 15px
+				padding-right 15px
+			.register-form__label
+				margin-bottom 10px
+				
+	&__legend
+		font-family bree_rgregular
+		font-size 24px
+		color yellow_regular
+		margin-bottom 20px
+		text-shadow(1px 3px 2px rgba(red_dark, .9))
+		margin-bottom 20px
+		padding 20px 0 5px
+		border none
+		width 100%
+		display block
+		zoom 1
+		white-space normal
+		&--white
+			font-family bree_ltlight
+			color white
+			text-shadow none
+			text-align center
+			width 50%
+			padding 45px 0 25px
+		span
+			color white
+	&__text
+		margin-bottom 25px
+	&__label
+		margin-top 8px
+		margin-bottom 5px
+		font-size 14px
+		// letter-spacing -0.8px
+		font-weight bold
+		span
+			font-size 11px
+			color gray_light
+	&__group-btn
+		.btn-group
+			width 100%
+			.btn
+				border-radius(4px !important)
+				width 32.7%
+				margin-right 1%
+				margin-bottom 1%
+				&:nth-child(3n+3)
+					margin-right 0
+		.btn-group--sm
+			width 45%
+			margin 0 auto
+			.btn
+				width 100% !important
+				margin-bottom 30px
+					
+
+	&__img
+		margin 0
+		padding 0
+		text-align center
+		margin 40px 0 24px
+		display block
+	&__actions
+		text-align center
+		padding 0 0 40px
+		&--edit
+			padding 20px 20px 10px
+			margin-left -30px
+			margin-right -30px
+
+.visible
+	padding 20px 0 10px
+	.form-group
+		&:last-child
+			margin-bottom 0
+	
+
+.legalperson
+.change-title
+	display none

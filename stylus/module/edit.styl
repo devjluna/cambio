@@ -1,0 +1,135 @@
+.edit-container
+	height 100%
+	position relative
+.edit-btn
+	z-index 2
+	background-color brown_light
+	display inline-block
+	width 42px
+	height 42px
+	text-align center
+	line-height 42px
+	border-radius(50%)
+	cursor pointer
+	position absolute
+	&__icon
+		color yellow_regular
+		font-size 25px
+		line-height 42px
+	&--photo
+		left 108px
+		top 10px
+	&--avatar
+		left 20px
+		top 35px
+		
+.question-btn
+	z-index 2
+	background-color brown_light
+	display inline-block
+	width 35px
+	height 35px
+	text-align center
+	line-height 42px
+	border-radius(50%)
+	cursor pointer
+	position absolute
+	top -10px
+	margin-left 10px
+	&__modal
+		position relative
+		top -4px
+	&__icon
+		color yellow_regular
+		font-size 25px
+		line-height 42px
+
+
+.cropit-header
+	text-align center
+	margin-bottom 20px
+.cropit-image-input
+	visibility hidden
+	text-align center
+// .cropit-image-background-container,
+// .image-editor
+// 	overflow hidden
+	
+.cropit-image-preview
+	background-color #f8f8f8
+	background-size cover
+	border 1px solid #ccc
+	border-radius 3px
+	margin-top 7px
+	width 324px
+	height @width
+	cursor move
+.cropit-image-background
+	opacity .2
+	cursor auto
+
+.image-size-label
+	margin-top 10px
+input
+	display block
+
+#result
+	margin-top 10px
+	width 900px
+
+#result-data
+	display block
+	overflow hidden
+	white-space nowrap
+	text-overflow ellipsis
+	word-wrap break-word
+      
+input[type='range']
+	-webkit-appearance none
+	border-radius 5px
+	background-color white
+	height 6px
+	vertical-align middle
+	width 50%
+	display inline-block
+	margin 0 10px
+input[type='range']
+	&::-moz-range-track
+		 -moz-appearance none
+		 border-radius 5px
+		 box-shadow inset 0 0 5px #333
+		 background-color #999
+		 height 10px
+input[type='range']
+	&::-webkit-slider-thumb
+		-webkit-appearance none !important
+		border-radius(50%)
+		background-color yellow_regular
+		border 1px solid yellow_dark
+		height 24px
+		width 24px
+		cursor pointer
+input[type='range']::-moz-range-thumb
+	-moz-appearance none
+	border-radius 20px
+	background-color #FFF
+	box-shadow inset 0 0 10px rgba(000,000,000,0.5)
+	border 1px solid #999
+	height 20px
+	width 20px
+.cropit-zoom
+	padding 20px 0
+	text-align center
+	.fa
+		vertical-align middle
+.cropit-actions
+	border-top 1px solid white
+	text-align center
+	margin-left -22px
+	margin-right -22px
+	padding 20px 0 0
+	.btn
+		vertical-align middle
+		margin-right 15px
+		&:last-child
+			margin-right 0

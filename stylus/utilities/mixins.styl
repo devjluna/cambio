@@ -1,0 +1,86 @@
+// Linear gradient
+all-gradient(color1, color2)
+    background-color (color1 + (color2 - color1) / 2)
+    background -webkit-gradient(linear, left top, left bottom, color-stop(30%,color1), color-stop(60%,color2))
+    background -webkit-linear-gradient(top, color1 30%, color2 60%)
+    background -moz-linear-gradient(top, color1 30%, color2 60%)
+    background -ms-linear-gradient(top, color1 30%, color2 60%)
+    background -o-linear-gradient(top, color1 30%, color2 60%)
+    background linear-gradient(top, color1 30%, color2 60%)
+    filter 'progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorstr=%s, EndColorstr=%s)' % (color1 color2)
+
+all-gradient-btn(color1, color2)
+    background-color (color1 + (color2 - color1) / 2)
+    background -webkit-gradient(linear, left top, left bottom, color-stop(30%,color1), color-stop(60%,color2))
+    background -webkit-linear-gradient(top, color1 30%, color2 60%)
+    background -moz-linear-gradient(top, color1 30%, color2 60%)
+    background -ms-linear-gradient(top, color1 30%, color2 60%)
+    background -o-linear-gradient(top, color1 30%, color2 60%)
+    background linear-gradient(top, color1 30%, color2 60%)
+    filter 'progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorstr=%s, EndColorstr=%s)' % (color1 color2)
+    &:hover
+    &:active
+    &:visited
+      background -webkit-gradient(linear, left top, left bottom, color-stop(10%,color1), color-stop(70%,color2))
+      background -webkit-linear-gradient(top, color1 10%, color2 70%)
+      background -moz-linear-gradient(top, color1 10%, color2 70%)
+      background -ms-linear-gradient(top, color1 10%, color2 70%)
+      background -o-linear-gradient(top, color1 10%, color2 70%)
+      background linear-gradient(top, color1 10%, color2 70%)
+      filter 'progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorstr=%s, EndColorstr=%s)' % (color1 color2)
+
+ 
+// Border-radius
+border-radius(n)
+  -webkit-border-radius n
+  -moz-border-radius n
+  border-radius n
+  
+// Box-shadow
+box-shadow()
+  -webkit-box-shadow arguments
+  -moz-box-shadow arguments
+  box-shadow arguments
+
+// Text-shadow
+text-shadow()
+  -webkit-text-shadow arguments
+  -moz-text-shadow arguments
+  text-shadow arguments
+
+//Transitions
+transitions()
+  -webkit-transition arguments
+  -moz-transition arguments
+  -ms-transition arguments
+  transition arguments
+
+// Button default mixins
+button-variant($color, $background, $border)
+  color $color !important
+  background-color $background
+  border-color darken($border, 2%)
+  &:hover
+  &:focus
+  &:active
+    background-color darken($background, 12%)
+  &:active
+    background-image none
+    
+// Button default mixins
+button-options($color, $background, $border)
+  color $color !important
+  background-color $background
+  border-color darken($border, 2%)
+  &:hover
+  &:active
+    background-color lighten($background, 25%)
+  &:active
+    background-image none
+
+bg-size()
+  -webkit-background-size arguments
+  -moz-background-size arguments
+  -o-background-size arguments
+  -ms-background-size arguments
+  background-size arguments

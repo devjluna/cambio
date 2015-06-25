@@ -1,0 +1,474 @@
+@import '../utilities/*'
+
+/***********************
+  Base styles
+***********************/
+@font-face
+	font-family bree_rgbold
+	src url(../fonts/breebold-webfont.eot)
+	src url(../fonts/breebold-webfont.eot?#iefix) format('embedded-opentype'),
+		url(../fonts/breebold-webfont.woff2) format('woff2'),
+		url(../fonts/breebold-webfont.woff) format('woff'),
+		url(../fonts/breebold-webfont.ttf) format('truetype'),
+		url(../fonts/breebold-webfont.svg#bree_rgbold) format('svg')
+	font-weight normal
+	font-style normal
+    
+@font-face
+	font-family bree_ebextrabold
+	src url(../fonts/breeextrabold-webfont.eot)
+	src url(../fonts/breeextrabold-webfont.eot?#iefix) format('embedded-opentype'),
+		url(../fonts/breeextrabold-webfont.woff2) format('woff2'),
+		url(../fonts/breeextrabold-webfont.woff) format('woff'),
+		url(../fonts/breeextrabold-webfont.ttf) format('truetype'),
+		url(../fonts/breeextrabold-webfont.svg#bree_ebextrabold) format('svg')
+	font-weight normal
+	font-style normal
+    
+@font-face
+	font-family bree_ltlight
+	src url(../fonts/breelight-webfont.eot)
+	src url(../fonts/breelight-webfont.eot?#iefix) format('embedded-opentype'),
+		url(../fonts/breelight-webfont.woff2) format('woff2'),
+		url(../fonts/breelight-webfont.woff) format('woff'),
+		url(../fonts/breelight-webfont.ttf) format('truetype'),
+		url(../fonts/breelight-webfont.svg#bree_ltlight) format('svg')
+	font-weight normal
+	font-style normal
+    
+@font-face
+	font-family bree_rgbold_oblique
+	src url(../fonts/breeoblique_bold-webfont.eot)
+	src url(../fonts/breeoblique_bold-webfont.eot?#iefix) format('embedded-opentype'),
+		url(../fonts/breeoblique_bold-webfont.woff2) format('woff2'),
+		url(../fonts/breeoblique_bold-webfont.woff) format('woff'),
+		url(../fonts/breeoblique_bold-webfont.ttf) format('truetype'),
+		url(../fonts/breeoblique_bold-webfont.svg#bree_rgbold_oblique) format('svg')
+	font-weight normal
+	font-style normal
+    
+@font-face
+	font-family bree_ebextrabold_oblique
+	src url(../fonts/breeoblique_extrabold-webfont.eot)
+	src url(../fonts/breeoblique_extrabold-webfont.eot?#iefix) format('embedded-opentype'),
+		url(../fonts/breeoblique_extrabold-webfont.woff2) format('woff2'),
+		url(../fonts/breeoblique_extrabold-webfont.woff) format('woff'),
+		url(../fonts/breeoblique_extrabold-webfont.ttf) format('truetype'),
+		url(../fonts/breeoblique_extrabold-webfont.svg#bree_ebextrabold_oblique) format('svg')
+	font-weight normal
+	font-style normal
+    
+@font-face
+	font-family bree_ltlight_oblique
+	src url(breeoblique_light-webfont.eot)
+	src url(breeoblique_light-webfont.eot?#iefix) format('embedded-opentype'),
+		url(../fonts/breeoblique_light-webfont.woff2) format('woff2'),
+		url(../fonts/breeoblique_light-webfont.woff) format('woff'),
+		url(../fonts/breeoblique_light-webfont.ttf) format('truetype'),
+		url(../fonts/breeoblique_light-webfont.svg#bree_ltlight_oblique) format('svg')
+	font-weight normal
+	font-style normal
+    
+@font-face
+	font-family bree_rgoblique
+	src url(../fonts/breeoblique_reg-webfont.eot)
+	src url(../fonts/breeoblique_reg-webfont.eot?#iefix) format('embedded-opentype'),
+		url(../fonts/breeoblique_reg-webfont.woff2) format('woff2'),
+		url(../fonts/breeoblique_reg-webfont.woff) format('woff'),
+		url(../fonts/breeoblique_reg-webfont.ttf) format('truetype'),
+		url(../fonts/breeoblique_reg-webfont.svg#bree_rgoblique) format('svg')
+	font-weight normal
+	font-style normal
+    
+@font-face
+	font-family bree_ththin_oblique
+	src url(../fonts/breeoblique_thin-webfont.eot)
+	src url(../fonts/breeoblique_thin-webfont.eot?#iefix) format('embedded-opentype'),
+		url(../fonts/breeoblique_thin-webfont.woff2) format('woff2'),
+		url(../fonts/breeoblique_thin-webfont.woff) format('woff'),
+		url(../fonts/breeoblique_thin-webfont.ttf) format('truetype'),
+		url(../fonts/breeoblique_thin-webfont.svg#bree_ththin_oblique) format('svg')
+	font-weight normal
+	font-style normal
+
+@font-face
+	font-family bree_rgregular
+	src url(../fonts/breeregular-webfont.eot)
+	src url(../fonts/breeregular-webfont.eot?#iefix) format('embedded-opentype'),
+		url(../fonts/breeregular-webfont.woff2) format('woff2'),
+		url(../fonts/breeregular-webfont.woff) format('woff'),
+		url(../fonts/breeregular-webfont.ttf) format('truetype'),
+		url(../fonts/breeregular-webfont.svg#bree_rgregular) format('svg');
+	font-weight normal
+	font-style normal
+
+@font-face
+	font-family bree_ththin
+	src url(../fonts/breethin-webfont.eot)
+	src url(../fonts/breethin-webfont.eot?#iefix) format('embedded-opentype'),
+		url(../fonts/breethin-webfont.woff2) format('woff2'),
+		url(../fonts/breethin-webfont.woff) format('woff'),
+		url(../fonts/breethin-webfont.ttf) format('truetype'),
+		url(../fonts/breethin-webfont.svg#bree_ththin) format('svg')
+	font-weight normal
+	font-style normal
+
+html
+	height 100%
+body
+	background-color background
+	color white
+	font-family "Helvetica Neue", Helvetica, Arial, sans-serif
+	font-size 14px
+	line-height 17px
+	height 100%
+a
+	text-decoration none !important
+	color white !important
+	font-family bree_rgregular
+.text-link
+	&--md
+		font-size 18px
+	&:hover
+		border-bottom 1px solid !important
+	&--ml
+		margin-left 8px
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	font-family bree_rgregular
+
+textarea
+select
+input[type="text"]
+input[type="password"]
+input[type="datetime"]
+input[type="datetime-local"]
+input[type="date"]
+input[type="month"]
+input[type="time"]
+input[type="week"]
+input[type="number"]
+input[type="email"]
+input[type="url"]
+input[type="search"]
+input[type="tel"]
+input[type="color"]
+textarea.form-control
+select.form-control
+	color gray_regular !important
+	box-shadow none !important
+	border-radius(2px !important)
+	&:focus
+		border-color lighten(gray_regular, 50%)
+		outline 0
+		outline thin dotted \9
+		box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(98, 196, 98, 0.6))
+
+textarea
+	resize none
+		
+button
+.btn
+.btn:hover
+.btn:active
+.btn:visited
+.btn:focus
+	&:focus
+		outline 0
+		
+// Custom style modal
+.modal-open 
+	.modal
+		padding-left 0px !important
+		padding-right 0px !important
+		overflow-y scroll
+.modal-header
+	background-color lighten(red_regular, 20%)
+	padding 12px 18px
+	border 0
+	border-radius(5px 5px 0 0)
+	.close
+		background-color red_regular
+		border-radius(50%)
+		color white
+		width 25px
+		height @width
+		opacity 1
+		line-height @width
+		position absolute
+		right 12px
+		top 10px
+		&:hover
+			background-color red_dark
+	h4
+		margin 0
+.modal-body
+	background-color #ff4c46
+	position relative
+	padding 18px
+	overflow hidden
+
+// Custom style checkbox
+.checkbox
+	padding-left 20px
+	label
+		display inline-block
+		position relative
+		padding-left 5px
+		&::before
+			content ""
+			display inline-block
+			position absolute
+			width 17px
+			height 17px
+			left 0
+			margin-left -20px
+			border 1px solid #cccccc
+			border-radius 3px
+			background-color #fff
+			-webkit-transition border 0.15s ease-in-out, color 0.15s ease-in-out
+			-o-transition border 0.15s ease-in-out, color 0.15s ease-in-out
+			transition border 0.15s ease-in-out, color 0.15s ease-in-out
+		&::after
+			display inline-block
+			position absolute
+			width 16px
+			height 16px
+			left 0
+			top 0
+			margin-left -20px
+			padding-left 3px
+			padding-top 1px
+			font-size 11px
+			color gray_regular
+	input[type="checkbox"]
+		opacity 0
+	input[type="checkbox"]:focus
+		& + label
+			&::before
+				outline thin dotted
+				outline 5px auto -webkit-focus-ring-color
+				outline-offset -2px
+				outline 0
+	input[type="checkbox"]:checked
+		& + label
+			&::after
+				font-family 'FontAwesome'
+				content "\f00c"
+	input[type="checkbox"]:disabled
+		& + label
+			opacity 0.65
+			&::before
+				background-color #eeeeee
+				cursor not-allowed
+	&.checkbox-circle
+		label
+			&::before
+				border-radius 50%
+	&.checkbox-inline
+		margin-top 0
+.checkbox-primary
+	input[type="checkbox"]:checked
+		& + label
+			&::before
+				background-color #428bca
+				border-color #428bca
+			&::after
+				color #fff
+.checkbox-danger
+	input[type="checkbox"]:checked
+		& + label
+			&::before
+				background-color #d9534f
+				border-color #d9534f
+			&::after
+				color #fff
+.checkbox-info
+	input[type="checkbox"]:checked
+		& + label
+			&::before
+				background-color #5bc0de
+				border-color #5bc0de
+			&::after
+				color #fff
+.checkbox-warning
+	input[type="checkbox"]:checked
+		& + label
+			&::before
+				background-color #f0ad4e
+				border-color #f0ad4e
+			&::after
+				color #fff
+.checkbox-success
+	input[type="checkbox"]:checked
+		& + label
+			&::before
+				background-color #5cb85c
+				border-color #5cb85c
+			&::after
+				color #fff
+
+.btn--yellow--degraded
+	all-gradient-btn(yellow_light, yellow_dark)
+	color #a9432c !important
+.btn--lilac--degraded
+	all-gradient-btn(lilac_light, lilac_dark)
+	color white !important
+.btn--red--degraded
+	all-gradient(red_extra_light1, red_extra_light2)
+	color white !important
+	&.active
+		background red_dark !important
+		border-color red_dark
+
+// Custom style radio
+.radios
+	width 50%
+	float left
+input[type=radio].radio-input
+	display none
+	& + label
+		&.radio-lbl
+			display inline-block
+			background-repeat no-repeat
+			font-size 20px
+			vertical-align middle
+			cursor pointer
+			margin-bottom 0 !important
+			&.radio-lg
+				background-position -1px 0
+				padding-top 1px
+				padding-left 45px
+				height 32px
+				line-height 32px
+			&.radio-md
+				background-position -1px -87px
+				padding-left 28px
+				letter-spacing -0.4px
+				height 22px
+				line-height 22px
+				// margin-bottom 8px
+				margin-top 6px
+	&:checked
+		& + label
+			&.radio-lbl
+				&.radio-lg
+					background-position -1px -32px
+				&.radio-md
+					background-position -1px -65px
+
+.quiz-question-block
+	&.qhidden
+		display none
+label
+	&.radio-lbl
+		background-image url(Images/sprite.png)
+		-webkit-touch-callout none
+		-webkit-user-select none
+		-khtml-user-select none
+		-moz-user-select none
+		-ms-user-select none
+		user-select none
+		float left
+		font-weight normal
+		font-size 17px !important
+		&.radio-lg
+			margin-right 55px
+			font-size 17px !important
+		&.radio-md
+			margin-right 55px
+			font-size 16px !important
+
+// Custom style select
+.select
+	overflow hidden
+	border-radius(2px)
+	background white url(Images/arrow.png) no-repeat 100% 50%
+	select
+		cursor pointer
+		padding 5px 8px
+		border none
+		box-shadow none
+		background transparent
+		background-image none
+		-webkit-appearance none
+		-moz-appearance none
+		-ms-appearance none
+		-o-appearance none
+		appearance none
+		&::-ms-expand
+			display none
+
+// Color social
+.fb
+.twitter
+.gplus
+	color #fff
+	text-align center
+.fb
+	background-color $fb_color
+	box-shadow(inset 2px 2px 10px darken($fb_color, 40%))
+.twitter
+	background-color $twitter_color
+	box-shadow(inset 2px 2px 10px darken($twitter_color, 40%))
+.gplus
+	background-color $gplus_color
+	box-shadow(inset 2px 2px 10px darken($gplus_color, 20%))
+
+// Helpers
+.mt-35
+	margin-top 35px !important
+.mb-15
+	margin-bottom 15px !important
+.pl-0
+	padding-left 0
+.no-border
+	border none !important
+	
+// Buttons default
+.btn--yellow
+	button-variant(red_light, yellow_light, yellow_light)
+	font-family bree_rgbold
+	font-size 18px
+	&.btn-mlr
+		margin 0 8px
+.btn--purple
+	button-variant(white, purple_regular, purple_regular)
+	font-family bree_rgbold
+	font-size 18px
+.btn--lilac2
+	button-variant(white, #7d0063, #7d0063)
+	font-family bree_rgregular
+	font-size 16px
+	color white
+.btn--lilac
+	button-variant(white, lilac_dark, lilac_dark)
+	font-family bree_rgregular
+	font-size 16px
+	color white !important
+	border 0
+	text-align center
+.btn--red
+	button-variant(white, red_regular, red_regular)
+	font-family bree_rgregular
+	font-size 16px
+	text-align center
+.btn--red-options
+	button-options(white, red_regular, lighten(red_light, 30%))
+	font-family bree_rgregular
+	font-size 16px
+	text-align center
+	border-width 2px
+.btn--secondary
+	button-variant(red_dark, red_regular, red_regular)
+	font-family bree_rgbold
+	font-size 18px
+	margin 0 8px
+	color white !important
+.fa-mr
+	margin-right 6px

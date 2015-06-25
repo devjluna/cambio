@@ -1,0 +1,513 @@
+<!doctype html>
+<html class="no-js" lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        
+        <!-- Resources -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/vendor/formValidation.min.css">
+        <link rel="stylesheet" href="css/vendor/fuelux.css">
+        <link rel="stylesheet" href="css/vendor/mediaelementplayer.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <div class="social">
+            <a href="" target="_blank" class="social__btn social__btn--facebook">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="" target="_blank" class="social__btn social__btn--twitter">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="" target="_blank" class="social__btn social__btn--gplus">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </div>
+        <!-- HEADER TOP -->
+        <div class="topbar">
+            <div class="container">
+                <!-- Authentication -->
+                <div class="topbar__authen pull-right">
+                    <a href="" class="btn topbar__authen__btn btn--yellow--degraded" data-toggle="modal" data-target="#modalLogin">Ingresar</a>
+                    <a href="register.html" class="btn topbar__authen__btn btn--lilac--degraded">Regístrate</a>
+                </div>
+                
+                <!-- Search and options -->
+                <ul class="topbar__options pull-right">
+                    <li class="topbar__option language">
+                        <a href="" class="topbar__option__btn btn--lilac">ES</a>
+                    </li>
+                    <li class="topbar__option">
+                        <a href="" class="topbar__option__btn btn--lilac"><i class="fa fa-sitemap"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div> <!-- /ENDS HEADER TOP-->
+
+                <!-- HEADER -->
+        <header class="header">
+            <nav class="navbar menu" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnav">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <h1 class="logo">
+                            <a href="index.html" class="logo__link">Musica Perú</a>
+                        </h1>
+                    </div>
+                    <div class="collapse navbar-collapse" id="mainnav">
+                        <ul class="nav navbar-nav menu__list">
+                            <li class="menu__item"><a href="" class="menu__link">¿Que es la rnm?</a></li>
+                            <li class="menu__item"><a href="search_artists.html" class="menu__link">Encuentra artístas</a></li>
+                            <li class="menu__item dropdown">
+                                <a href="" class="dropdown-toggle menu__link" data-toggle="dropdown" data-hover="dropdown">Oportunidades <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">Becas</a></li>
+                                    <li><a href="">Actividades y eventos</a></li>
+                                    <li><a href="">Fondos</a></li>
+                                    <li><a href="">Concursos y premios</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item dropdown">
+                                <a href="" class="dropdown-toggle menu__link" data-toggle="dropdown" data-hover="dropdown">Recursos en línea <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">Marco normativo</a></li>
+                                    <li><a href="">Publicaciones</a></li>
+                                    <li><a href="">Material audiovisual</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item"><a href="" class="menu__link">Contáctanos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header> <!-- /ENDS HEADER -->
+
+        <!-- WRAPPER -->
+        <div class="wrapper">
+            <div class="register fuelux">
+                <div class="container">
+                    <div class="col-sm-offset-2 col-sm-8">
+                        <h2 class="register__guie">¡Regístrate en 3 pasos!</h2>
+
+                        <!-- Wizard Register -->
+                        <div class="wizard wzd" id="registerWizard">
+                            <ul class="steps">
+                                <li data-step="1" class="active">
+                                    <span class="wzd__step">1</span><span class="wzd__title">Personales</span>
+                                </li>
+                                <li data-step="2">
+                                    <span class="wzd__step">2</span><span class="wzd__title">Perfil</span>
+                                </li>
+                                <li data-step="3">
+                                    <span class="wzd__step">3</span><span class="wzd__title">Confirmación</span>
+                                </li>
+                            </ul>
+
+                            <form method="POST" action="" id="registerForm" class="form form-horizontal">
+                                <div class="step-content">
+
+                                    <!-- Step Personales -->
+                                    <div class="step-pane active" data-step="1">
+
+                                        <fieldset class="form__fieldset form__fieldset--shadow">
+                                            <legend class="form__legend">Registra tu cuenta</legend>
+                                            <div class="form-group">
+                                                <label for="email" class="col-sm-3 form__label">Email</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" id="email" name="email" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="pwd" class="col-sm-3 form__label">Contraseña</label>
+                                                <div class="col-sm-9">
+                                                    <input type="password" id="pwd" name="pwd" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="confirmpwd" class="col-sm-3 form__label">Repetir Contraseña</label>
+                                                <div class="col-sm-9">
+                                                    <input type="password" id="confirmpwd" name="confirmpwd" class="form-control">
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        
+                                        <fieldset class="form__fieldset form__fieldset--shadow">
+                                            <legend class="form__legend">Perfil legal</legend>
+                                            <p class="form__text">En caso de ejercer labores como artista independiente, la casilla seleccionada deberá ser Natural. En caso el grupo o solista esté registrado en SUNAT bajo un RUC, la casilla seleccionada deberá ser Jurídica.</p>
+                                            <div class="form-group">
+                                                <label class="col-sm-3 form__label">Tipo de Persona</label>
+                                                <div class="col-sm-9">
+                                                    <div class="radios">
+                                                        <input type="radio" name="persontype" id="natural" value="natural" class="radio-input" checked="checked">
+                                                        <label for="natural" class="radio-lbl radio-md">Natural</label>
+                                                    </div>
+                                                    <div class="radios">
+                                                        <input type="radio" name="persontype" id="legal" value="legal" class="radio-input">
+                                                        <label for="legal" class="radio-lbl radio-md">Jurídica</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+
+                                        <fieldset class="form__fieldset form__fieldset--shadow naturalperson">
+                                            <legend class="form__legend">Ingresa datos de la cuenta</legend>
+                                            <div class="form-group">
+                                                <label for="name" class="col-sm-3 form__label">Nombre</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" id="name" name="name" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="fname" class="col-sm-3 form__label">Apellido Paterno</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" id="fname" name="fname" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="lname" class="col-sm-3 form__label">Apellido Materno</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" id="lname" name="lname" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="dni" class="col-sm-3 form__label">D.N.I.</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" id="dni" name="dni" maxlength="8" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="ruc" class="col-sm-3 form__label">R.U.C. <span>(de ser el caso)</span></label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" id="ruc" name="ruc" maxlength="12" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-3 form__label">Sexo</label>
+                                                <div class="col-sm-9">
+                                                    <div class="radios">
+                                                        <input type="radio" name="sex" id="male" value="masculino" class="radio-input" checked="checked">
+                                                        <label for="male" class="radio-lbl radio-md">Masculino</label>
+                                                    </div>
+                                                    <div class="radios">
+                                                        <input type="radio" name="sex" id="female" value="femenino" class="radio-input">
+                                                        <label for="female" class="radio-lbl radio-md">Femenino</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="department" class="col-sm-3 form__label">Lugar de origen</label>
+                                                <div class="col-sm-9">
+                                                    <div class="select">
+                                                        <select id="department" name="department" class="form-control">
+                                                            <option value="">[Departamento]</option>
+                                                            <option value="0">La Libertad</option>
+                                                            <option value="1">Arequipa</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="" class="col-sm-3"></label>
+                                                <div class="col-sm-9">
+                                                    <div class="select">
+                                                        <select id="province" name="province" class="form-control">
+                                                            <option value="">[Provincia]</option>
+                                                            <option value="0">Lima</option>
+                                                            <option value="1">Huaral</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="district" class="col-sm-3"></label>
+                                                <div class="col-sm-9">
+                                                    <div class="select">
+                                                        <select id="district" name="district" class="form-control">
+                                                            <option value="">[Distrito]</option>
+                                                            <option value="0">Villa María del Triungo</option>
+                                                            <option value="1">San Juan de Lurigancho</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="phone" class="col-sm-3 form__label">Teléfono</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" id="phone" name="phone" maxlength="7" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="mobile" class="col-sm-3 form__label">Celular</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" id="mobile" name="mobile" maxlength="9" class="form-control">
+                                                </div>
+                                            </div>
+                                        </fieldset>
+
+                                        <!-- Legal person -->
+                                        <div class="legalperson">
+                                            <fieldset class="form__fieldset form__fieldset--shadow">
+                                                <legend class="form__legend">Ingresa datos de la empresa</legend>
+                                                <div class="form-group">
+                                                    <label for="lreason" class="col-sm-3 form__label">Razón social</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="lreason" name="lreason" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lruc" class="col-sm-3 form__label">R.U.C.</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="lruc" name="lruc" maxlength="12" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lyear_start" class="col-sm-3 form__label">Año de inicio</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="lyear_start" name="lyear_start" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="laddress" class="col-sm-3 form__label">Dirección</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="laddress" name="laddress" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lphone" class="col-sm-3 form__label">Teléfono</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="lphone" name="lphone" maxlength="7" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lmobile" class="col-sm-3 form__label">Celular</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="lmobile" name="lmobile" maxlength="7" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lemail" class="col-sm-3 form__label">Email</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="email" id="lemail" name="lemail" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                        
+
+
+
+                                        <!-- Natural Person -->
+                                        <div class="naturalper">
+                                            <fieldset class="form__fieldset form__fieldset--shadow">
+                                                <legend class="form__legend">Selecciona tu perfil</legend>
+                                                <div class="form-group form__group-btn">
+                                                    <div class="btn-group" data-toggle="buttons">
+                                                        <label class="btn btn--red--degraded">
+                                                            <input type="radio" id="profile" name="profile" value="male" /> Autor / Compositor
+                                                        </label>
+                                                        <label class="btn btn--red--degraded">
+                                                            <input type="radio" id="profile" name="profile" value="female" /> Director de orquesta
+                                                        </label>
+                                                        <label class="btn btn--red--degraded">
+                                                            <input type="radio" id="profile" name="profile" value="other" /> Ingeniero de sonido
+                                                        </label>
+                                                        <label class="btn btn--red--degraded">
+                                                            <input type="radio" id="profile" name="profile" value="male" /> Autor / Compositor
+                                                        </label>
+                                                        <label class="btn btn--red--degraded">
+                                                            <input type="radio" id="profile" name="profile" value="female" /> Director de orquesta
+                                                        </label>
+                                                        <label class="btn btn--red--degraded">
+                                                            <input type="radio" id="profile" name="profile" value="other" /> Ingeniero de sonido
+                                                        </label>
+                                                        <label class="btn btn--red--degraded">
+                                                            <input type="radio" id="profile" name="profile" value="male" /> Autor / Compositor
+                                                        </label>
+                                                        <label class="btn btn--red--degraded">
+                                                            <input type="radio" id="profile" name="profile" value="female" /> Director de orquesta
+                                                        </label>
+                                                        <label class="btn btn--red--degraded">
+                                                            <input type="radio" id="profile" name="profile" value="other" /> Ingeniero de sonido
+                                                        </label>
+                                                        <label class="btn btn--red--degraded">
+                                                            <input type="radio" id="profile" name="profile" value="male" /> Autor / Compositor
+                                                        </label>
+                                                        <label class="btn btn--red--degraded">
+                                                            <input type="radio" id="profile" name="profile" value="female" /> Director de orquesta
+                                                        </label>
+                                                        <label class="btn btn--red--degraded">
+                                                            <input type="radio" id="profile" name="profile" value="other" /> Ingeniero de sonido
+                                                        </label>
+
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <!-- Step Perfil -->
+                                    <div class="step-pane" data-step="2">
+                                        <legend class="form__legend mt-35">Ingresa tus datos de Autor y/o Compositor</legend>
+                                        <fieldset class="form__fieldset form__fieldset--vertical">
+                                            <div class="form-group">
+                                                <label for="nameartist" class="form__label">Nombre artístico</label>
+                                                <input type="text" name="a" id="" class="form-control" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="aboutme" class="form__label">Acerca de mí</label>
+                                                <textarea name="b" id="" rows="4" class="form-control" required></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="specialty" class="form__label">Especialidad</label>
+                                                <div class="select">
+                                                    <select id="" name="c" class="form-control" required>
+                                                        <option value="">Autor</option>
+                                                        <option value="0">Option1</option>
+                                                        <option value="1">Option2</option>
+                                                        <option value="2">Option3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="information" class="form__label">¿Cuentas con formación profesional y/o vinculada a la música?</label>
+                                                <input type="text" name="d" id="" class="form-control" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <select name="e" id="" class="form-control" required>
+                                                    <option value="">Seleccione año</option>
+                                                    <option value="1">1990</option>
+                                                    <option value="2">1989</option>
+                                                    <option value="3">1988</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form__label mb-15">Selecciona el género o estilo musical principal para el sueles componer</label>
+                                                <div class="radios">
+                                                    <input type="radio" name="genre" id="amazonica" value="amazonica" class="radio-input" checked="checked">
+                                                    <label for="amazonica" class="radio-lbl radio-md">Amazónica</label>
+                                                </div>
+                                                <div class="radios">
+                                                    <input type="radio" name="genre" id="experimental" value="experimental" class="radio-input">
+                                                    <label for="experimental" class="radio-lbl radio-md">Experimental</label>
+                                                </div>
+                                                <div class="radios">
+                                                    <input type="radio" name="genre" id="pop" value="pop" class="radio-input">
+                                                    <label for="pop" class="radio-lbl radio-md">Pop</label>
+                                                </div>
+                                                <div class="radios">
+                                                    <input type="radio" name="genre" id="andina" value="andina" class="radio-input">
+                                                    <label for="andina" class="radio-lbl radio-md">Andina</label>
+                                                </div>
+                                                
+                                            </div>
+                                        </fieldset>
+                                    </div>
+
+                                    <!-- Step Confirmación -->
+                                    <div class="step-pane" data-step="3">
+                                        <legend class="form__legend text-center mt-35"><span>Estás a</span> 5% <span>de completar tu registro.</span></legend>
+                                        <figure class="form__img">
+                                            <img src="Images/logo-box.jpg" alt="Música Perú" width="295" height="210">
+                                        </figure>
+                                    </div>
+
+                                </div>
+                                <div class="actions wzd__actions">
+                                    <button type="button" class="btn btn-lg btn--yellow btn-prev">Anterior</button>
+                                    <button type="button" class="btn btn-lg btn--yellow btn-next" data-last="Finalizar">Siguiente</button>
+                                </div>
+                            </form>
+
+                        </div> <!-- /Ends Wizard Register -->
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /ENDS WRAPPER -->
+
+        <!-- PARTNERS -->
+        <section class="partners">
+            <div class="container">
+                <ul class="partners__list">
+                    <li class="partners__item">
+                        <img src="Images/ministerio-cultura.png" alt="Ministerio de Cultura" width="165" height="56">
+                    </li>
+                    <li class="partners__item">
+                        <img src="Images/peru.png" alt="Marca Perú" width="165" height="56">
+                    </li>
+                    <li class="partners__item">
+                        <img src="Images/promperu.png" alt="Promperu" width="165" height="56">
+                    </li>
+                </ul>
+            </div>
+        </section> <!-- /ENDS PARTNERS -->
+            
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <p>Registro Nacional de Música Peruana - PROMPERÚ <br> COPYRIGHT 2015. Todos los derechos reservados.</p>
+            </div>
+        </footer> <!-- /ENDS FOOTER -->
+
+        <!-- MODALS -->
+        <!-- Modal login -->
+        <div class="modal fade" id="modalLogin" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4>Iniciar Sesión</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" method="" id="loginForm" class="frmlogin">
+                            <!-- <div class="error-backend">Tu correo no existe</div> -->
+                            <div class="form-group">
+                                <input type="text" id="email" name="email" class="form-control" placeholder="Correo electrónico">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="pwd" name="pwd" class="form-control" placeholder="Contraseña">
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" name="remember" id="remember"><label for="remember">Recordar contraseña</label>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn--yellow">Ingresar</button>
+                                <a href="reset_password.html" class="text-link text-link--ml">¿Haz olvidado tu contraseña?</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/bootstrap-hover-dropdown.min.js"></script>
+        <script src="js/vendor/jasny-bootstrap.min.js"></script>
+        <script src="js/vendor/formvalidation/formValidation.min.js"></script>
+        <script src="js/vendor/formvalidation/framework/bootstrap.min.js"></script>
+        <script src="js/vendor/fuelux.min.js"></script>
+        <script src="js/vendor/mediaelement-and-player.min.js"></script>
+        <script src="js/vendor/lightbox-2.6.min.js"></script>
+        <script src="js/vendor/jquery.slimscroll.min.js"></script>
+
+        <script src="js/home.js"></script>
+        <script src="js/register.js"></script>
+    </body>
+</html>
